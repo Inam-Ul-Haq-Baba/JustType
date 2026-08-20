@@ -84,10 +84,37 @@ let correctChars = 0;           // Keeping count of Correctly typed characters
 
 $("#typing").focus();
 
+
+let backspaceDisabled = false;
+
+//-------Handle BackSpace Button-------//
+
+    $(".disableBackspace").click(()=>{
+
+        if(!backspaceDisabled)
+        {
+            $(".disableBackspace").text("Enable Backspace").addClass("bg-red-500");
+            backspaceDisabled = true;
+        }else{
+            $(".disableBackspace").text("Disable Backspace").removeClass("bg-red-500");
+            backspaceDisabled = false;
+        }
+        
+        $("#typing").focus();
+    })
+
+
 $("#typing").on("keydown",(e)=>{
 
     e.preventDefault();
     // Start when we hit the first key
+
+    if(backspaceDisabled){
+        if(e.key === "Backspace")
+        {
+            return;
+        }
+    }
     
     if(!started)
     {
@@ -208,4 +235,6 @@ function wpmAndAccuracy(){
     
     
 }
+
+
 
