@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JustType is a simple and interactive typing test that helps you improve your typing speed, accuracy, and consistency with 1-minute, 3-minute, and 5-minute typing practice.">
+    <title>JustType</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="icon" type="image/png" href="./favicon-96x96.png">
+</head>
+<body class="flex flex-col items-center font-serif">
+
+    <div class="w-2/6">
+        <img src="images/logo.png" alt="image not found">
+    </div>
+
+    <div class="group mt-6 md:mt-8 lg:mt-12 absolute right-40">
+
+        <button aria-label="About JustType" class="px-3 border-gray-500 border-2 rounded-full bg-blue-200 italic font-extrabold text-xl lg:text-2xl">i</button>
+
+        <div class="hidden group-hover:block bg-white w-[80vw] max-w-[600px] p-5 border-2 rounded-xl absolute right-0 top-full text-sm">
+            <div>
+                <p>
+                    <span class="text-lg text-blue-900 font-bold">Just</span><span class="text-lg text-blue-500 font-bold">Type</span> is a simple and interactive typing practice application designed to help users improve their typing speed, accuracy, and consistency. <br> Users can choose between 1-minute, 3-minute, or 5-minute typing tests and type the given text within the selected time limit. During the test, the application tracks performance metrics such as WPM, accuracy, completed words, and typing errors.
+                </p>
+                <h3 class="text-xl text-blue-900 font-extrabold">Features:</h3>
+                    <ul>
+                        <li> ⏱️ 1, 3, and 5-minute typing tests</li>
+                        <li>⌨️ Real-time typing practice</li>
+                        <li>📊 WPM and accuracy tracking</li>
+                        <li>❌ Error tracking</li>
+                        <li>🎯 Helps improve typing speed and accuracy</li>
+                        <li>📱 Responsive and clean user interface</li>
+                        <li>⚡ Fast and lightweight frontend application</li>
+                    </ul>
+            
+                <h3 class="text-xl text-blue-900 font-extrabold">Built with:</h3>
+                    <p>HTML, Tailwind CSS, JavaScript, and JQuery</p>
+               
+                <h3 class="text-xl text-blue-900 font-extrabold">Purpose:</h3>
+                <p>JustType was created as a frontend development project to practice UI design, DOM manipulation, event handling, timers, JavaScript logic, and responsive web design.</p>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <main class="w-5/6 h-[400px] border-gray-500 border-2 rounded-xl bg-[url('images/background-img.png')] bg-cover bg-center min-h-full flex flex-col items-center">
+        <img class="w-[100px] mt-6" src="images/icon.png" alt="">
+        <p class="text-sm font-bold text-gray-500">Improve your typing speed and accuracy</p>
+        <ul class=" flex justify-between gap-5 mt-5 mb-8 text-xs text-gray-500 font-bold">
+            <li>📈 Track Progress</li>
+            <li>⚡ Improve Speed</li>
+            <li>🏆 Beat Your Best</li>
+        </ul>
+        <h3 class="text-blue-950 text-lg font-bold">Choose Your Time</h3>
+        <div class="timing w-4/6 flex justify-between gap-5">
+            <a id="one" class="btn w-2/6 border-2 rounded-2xl flex flex-col items-center text-green-600 font-semibold py-3" href="typing.html?time=1"><img class="btn w-1/5" src="images/clock.png" alt=""><p>1 Minute</p><p class="text-xs">Quick Test</p></a>
+            <a id="three" class="w-2/6 border-2 rounded-2xl flex flex-col items-center text-blue-600 font-semibold py-3" href="typing.html?time=3"><img class="btn w-1/5" src="images/clock.png" alt=""><p>3 Minutes</p><p class="text-xs">Practice</p></a>
+            <a id="five" class="w-2/6 border-2 rounded-2xl flex flex-col items-center text-purple-600 font-semibold py-3" href="typing.html?time=5"><img class="w-1/5" src="images/clock.png" alt=""><p>5 Minutes</p><p class="text-xs">Challenge</p></a>
+        </div>
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>

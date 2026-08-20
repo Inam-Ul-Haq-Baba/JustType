@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take a typing test with JustType and improve your typing speed, accuracy, and consistency with timed typing practice.">
+    <title>Typing Test | JustType</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="icon" type="image/png" href="./favicon-96x96.png">
+</head>
+
+<body class="flex flex-col items-center bg-[url('images/background-img.png')] bg-cover bg-center min-h-full">
+
+    <div class="top w-full flex justify-between items-center px-10 font-serif">
+
+        <a href="index.html" class="w-32 flex items-center text-xl text-blue-900 font-bold">
+            <img class="w-8" src="images/left-arrow.png" alt="">
+            <span>Home</span>
+        </a>
+
+        <div class="stopWatch text-blue-500 text-4xl font-bold">
+            2:00
+        </div>
+
+        <div>
+            <img class="w-[70px]" src="images/icon.png" alt="">
+        </div>
+
+    </div>
+
+    <div id="typing" tabindex="0"
+        class="border-gray-500 border-2 bg-white w-5/6 rounded-lg h-[450px] text-4xl text-gray-400 font-bold px-5 py-2 leading-relaxed overflow-y-auto">
+
+    </div>
+
+
+    <div id="result" class=" fixed inset-0 bg-black/50 items-center justify-center hidden ">
+
+        <div class="bg-white rounded-3xl p-10 w-[400px] text-center shadow-2xl">
+
+            <h2 class="text-3xl font-extrabold text-blue-900 mb-2">
+                Test Complete!
+            </h2>
+
+            <p class="text-gray-500 mb-8 font-semibold">
+                Great job! Here are your results.
+            </p>
+
+            <div class="flex justify-around mb-8 font-semibold">
+
+                <div>
+                    <p class="text-gray-500 font-semibold">Typing Speed</p>
+                    <p id="resultWpm" class="text-4xl font-bold text-blue-600">
+                        0
+                    </p>
+                    <p class="text-sm text-gray-600 font-semibold">WPM</p>
+                </div>
+
+                <div>
+                    <p class="text-gray-500 font-semibold">Accuracy</p>
+                    <p id="resultAccuracy" class="text-4xl font-bold text-green-600 ">
+                        0%
+                    </p>
+                </div>
+
+            </div>
+
+            <button onclick="location.reload()"
+                class="bg-blue-500 text-white px-6 py-2 rounded-xl font-bold hover:bg-blue-600">
+                Try Again
+            </button>
+
+            <a href="index.html" class="block mt-3 text-gray-500 font-semibold hover:text-blue-600">
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
