@@ -37,7 +37,7 @@ const fiveMinuteTexts = [
 //---------Selecting a random paragraph---------//
 function getRandomParagraph(textArray){
     let randomNumber = Math.floor(Math.random()*textArray.length);
-    return para = textArray[randomNumber]; 
+    return textArray[randomNumber]; 
 }
 
 const params = new URLSearchParams(window.location.search);
@@ -232,7 +232,6 @@ function wpmAndAccuracy(){
 
     $("#result").removeClass("hidden").addClass("flex");
 
-    
     
 }
 
