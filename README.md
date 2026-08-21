@@ -2,7 +2,7 @@
 
 **JustType** is a simple and interactive typing test that helps you improve your typing speed, accuracy, and consistency — built as a frontend project to practice UI design, DOM manipulation, event handling, and JavaScript logic.
 
-🔗 **Live Demo:** [Add your GitHub Pages / deployment link here]
+🔗 **Live Demo:** [https://inam-ul-haq-baba.github.io/JustType/]
 
 ![JustType Home-Page Screenshot](./images/home_ss.png)
 ![JustType Typing-Page Screenshot](./images/typing_ss.png)
